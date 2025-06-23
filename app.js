@@ -32,8 +32,13 @@ main()
     console.log(err);
  })
 
+// async function main() {
+//     await mongoose.connect(dbUrl);
+// }
 async function main() {
-    await mongoose.connect(dbUrl);
+    await mongoose.connect(dbUrl, {
+        dbName: 'Airbnb' // <--- Add this if your Atlas string lacks '/Airbnb'
+    });
 }
 
 app.set("view engine", "ejs")
