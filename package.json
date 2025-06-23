@@ -7,9 +7,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "sunaram",
+  "author": "Priyanshu",
   "license": "ISC",
   "dependencies": {
     "@maptiler/sdk": "^3.3.0",
